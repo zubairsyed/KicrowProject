@@ -1,0 +1,49 @@
+body{
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+
+}
+
+h1{
+    margin-top: 2rem;
+    color: white;
+    text-align: center;
+}
+
+#parent{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#parent div{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    align-items: center;
+    margin-top: 50px;
+    font-size: x-large;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#parent div:hover{
+    background-color: yellow;
+}
+#add{
+    position: absolute;
+    right: 50;
+    top: 60;
+    background-color: white;
+    padding: .7rem;
+    color: black;
+    font-size: x-large;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 500;
+}
