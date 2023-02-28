@@ -23,6 +23,12 @@ router.get('/add', (req,res)=>{
     res.render('add_categories', {title: "Add categories"})
 })
 
+// update the application route
+
+router.get('./edit/:id', (req,res)=>{
+    id
+});
+
 
 
 // router.use('/users', require('./users'));
