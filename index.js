@@ -1,10 +1,11 @@
 // importing packages
-// express
-const express = require('express');
-const app = express();
 
 // dotenv : this package makes our data secure
 require("dotenv").config();
+
+// express
+const express = require('express');
+const app = express();
 
 //mongoose package database packge
 const mongoose = require('mongoose');
@@ -40,7 +41,11 @@ app.use(session({
     resave: false
 }));
 
-
+app.use((req, res, next)=>{
+    res.locals.message = req.session.message;
+    delete req.session.message;
+    next();
+})
 
 
 

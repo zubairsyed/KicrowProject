@@ -1,6 +1,6 @@
 // connection to DB is directed from index.js so this is dummy
 const mongoose = require('mongoose');
-mongoose.connect("mongodb://localhost/kicrowDB");
+mongoose.connect("mongodb://localhost/Kicrow");
 
 const db = mongoose.connection;
 

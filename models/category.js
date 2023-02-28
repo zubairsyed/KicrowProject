@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 
 // creating schema for movie category
-const Categories = new mongoose.Schema({
+const appSchema = new mongoose.Schema({
     category: {
       type: String,
       required: true
@@ -41,12 +41,4 @@ const Categories = new mongoose.Schema({
 //   });
   
 
-  // create models for each category
-  const Category = mongoose.model('Movie', Categories);
-  // const Food = mongoose.model('Food', foodSchema);
-  // const UpiPayment = mongoose.model('UpiPayment', upiSchema);
-
-//   exporting all the schema's 
-  module.exports = Category;
-  // module.exports = Food;
-  // module.exports = UpiPayment;
+ module.exports = mongoose.model("User", appSchema);
